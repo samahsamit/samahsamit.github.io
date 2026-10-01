@@ -81,7 +81,7 @@ export const tools = [
 
 export const languages = [
   { name: "Italiano", level: "madrelingua" },
-  { name: "Arabo", level: "" },
+  { name: "Arabo", level: "madrelingua" },
   { name: "Inglese", level: "C1" },
 ];
 
