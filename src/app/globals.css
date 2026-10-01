@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-canvas: #f3f3f1;
+  --color-card: #ffffff;
+  --color-ink: #18181b;
+  --color-soft: #52525b;
+  --color-faint: #8a8a93;
+  --color-line: #e4e4e1;
+
+  /* LearNow: dal design system del progetto */
+  --color-ln: #f0642b;
+  --color-ln-ink: #1b2a4a;
+  --color-ln-tint: #fff3ea;
+
+  /* Studio dentistico: dalla relazione */
+  --color-dm: #d4809f;
+  --color-dm-ink: #9c3f63;
+  --color-dm-tint: #fbeef3;
+
+  --color-ok: #2e8b6e;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-card);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
