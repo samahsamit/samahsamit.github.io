@@ -77,8 +77,6 @@ export const tools = [
   "Python",
   "PHP",
   "Git",
-  "Docker",
-  "Linux",
 ];
 
 export const languages = [
